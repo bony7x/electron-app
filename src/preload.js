@@ -5,6 +5,6 @@ contextBridge.exposeInMainWorld("darkMode", {
   system: () => ipcRenderer.invoke("dark-mode:system"),
 });
 
-contextBridge.exposeInMainWorld('electron', {
-    startDrag: (fileName) => ipcRenderer.send('ondragstart', fileName)
-  })
+contextBridge.exposeInMainWorld("electron", {
+  startDrag: (fileName) => ipcRenderer.send("ondragstart", fileName),
+});

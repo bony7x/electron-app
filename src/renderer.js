@@ -30,12 +30,12 @@ async function testIt() {
 
 document.getElementById("clickme").addEventListener("click", testIt);
 
-document.getElementById('drag1').ondragstart = (event) => {
-    event.preventDefault()
-    window.electron.startDrag('drag-and-drop-1.md')
-  }
-  
-  document.getElementById('drag2').ondragstart = (event) => {
-    event.preventDefault()
-    window.electron.startDrag('drag-and-drop-2.md')
-  }
+document.getElementById("drag1").ondragstart = (event) => {
+  event.preventDefault();
+  window.electron.startDrag("drag-and-drop-1.md");
+};
+
+document.getElementById("drag2").ondragstart = (event) => {
+  event.preventDefault();
+  window.electron.startDrag("drag-and-drop-2.md");
+};
